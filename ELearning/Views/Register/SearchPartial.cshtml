@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br /><br />
+
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<section class="bg-color-blue">
+    <div class="row">
+        <div class="col-md-3">
+            <img class="img-thumbnail" src="/Images/a.jpg" alt="image">
+            <h3>Introduction</h3>
+            <a href="@TempData["material1"]" download>Click here to view this file...</a>
+           
+
+        </div>
+        <div class="col-md-3">
+            <img class="img-thumbnail" src="/Images/b.jpg">
+            <h3>Case Study</h3>
+            <a href="@TempData["material2"]" download>Click here to view this file...</a>
+
+        </div>
+        <div class="col-md-3">
+            <img class="img-thumbnail" src="/Images/c.jpg">
+            <h3>OOPs Concepts</h3>
+            <a href="@TempData["material3"]" download>Click here to view this file...</a>
+
+        </div>
+        <div class="col-md-3">
+            <img class="img-thumbnail" src="/Images/d.jpg">
+            <h3>Refer PDF</h3>
+            <a href="@TempData["material4"]" download>Click here to view this file...</a>
+            @*@Html.ActionLink("Click", "DownloadPDF", new { fileName="sdfsdf.ppt"})*@
+        </div>
+
+    </div>
+</section>
